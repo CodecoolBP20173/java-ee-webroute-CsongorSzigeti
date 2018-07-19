@@ -14,13 +14,13 @@ class Routes {
         os.close();
     }
 
-    @WebRoute(path = "/")
+    @WebRoute(path = "/main")
     void mainPage(HttpExchange exchange) throws IOException {
         String response = "Main page!";
         responseWriter(exchange, response);
     }
 
-    @WebRoute(path = "/test")
+    @WebRoute(path = "/first-test")
     void onTest(HttpExchange exchange) throws IOException {
         String response = "First test!";
         responseWriter(exchange, response);
